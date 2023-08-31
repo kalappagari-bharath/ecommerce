@@ -15,10 +15,10 @@ namespace API.Controllers
 {
     public class AccountController : BaseAPIController
     {
-        private  UserManager<AppUser> _userManager;
-        private  SignInManager<AppUser> _signInManager;
-        private  ITokenService _tokenService;
-        private  IMapper _mapper;
+        private readonly UserManager<AppUser> _userManager;
+        private readonly SignInManager<AppUser> _signInManager;
+        private readonly ITokenService _tokenService;
+        private readonly IMapper _mapper;
         public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, ITokenService tokenService, IMapper mapper)
         {
             _mapper = mapper;
